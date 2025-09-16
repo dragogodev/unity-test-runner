@@ -198,6 +198,9 @@ for platform in ${TEST_PLATFORMS//;/ }; do
     fi
   fi
 
+
+  apt-get update
+  apt-get install -y libsharpyuv0
   unity-editor \
     -batchmode \
     -logFile "$FULL_ARTIFACTS_PATH/$platform.log" \
