@@ -198,7 +198,10 @@ for platform in ${TEST_PLATFORMS//;/ }; do
     fi
   fi
 
-
+  add-apt-repository main
+  add-apt-repository universe
+  add-apt-repository restricted
+  add-apt-repository multiverse  
   apt-get update
   apt-get install -y libsharpyuv0
   unity-editor \
