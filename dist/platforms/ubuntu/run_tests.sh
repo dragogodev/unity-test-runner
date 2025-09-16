@@ -198,6 +198,8 @@ for platform in ${TEST_PLATFORMS//;/ }; do
     fi
   fi
 
+  apt install software-properties-common
+  apt-get update
   add-apt-repository main
   add-apt-repository universe
   add-apt-repository restricted
