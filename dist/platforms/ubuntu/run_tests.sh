@@ -1,18 +1,5 @@
 #!/usr/bin/env bash
 
-
-apt-get update
-apt-get clean
-apt-get install -y build-essential
-apt-get install software-properties-common -y
-apt-get update
-add-apt-repository main
-add-apt-repository universe
-add-apt-repository restricted
-add-apt-repository multiverse  
-apt-get update
-apt-get install -y libsharpyuv0
-
 #
 # Set and display project path
 #
