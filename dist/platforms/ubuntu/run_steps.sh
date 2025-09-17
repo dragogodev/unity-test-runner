@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 
 #
+# libsharpyuv0
+#
+apt-get update
+apt-get clean
+apt-get install -y build-essential
+apt-get install software-properties-common -y
+apt-get update
+add-apt-repository main
+add-apt-repository universe
+add-apt-repository restricted
+add-apt-repository multiverse  
+apt-get update
+apt-get install -y libsharpyuv0
+
+#
 # Run steps
 #
 source /steps/set_extra_git_configs.sh
