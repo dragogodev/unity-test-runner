@@ -4,7 +4,7 @@
 apt-get update
 apt-get clean
 apt-get install -y build-essential
-apt-get install software-properties-common
+apt-get install software-properties-common -y
 apt-get update
 add-apt-repository main
 add-apt-repository universe
