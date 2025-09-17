@@ -198,6 +198,7 @@ for platform in ${TEST_PLATFORMS//;/ }; do
     fi
   fi
 
+  apt-get update && apt-get clean && apt-get install -y build-essential
   apt install software-properties-common
   apt-get update
   add-apt-repository main
