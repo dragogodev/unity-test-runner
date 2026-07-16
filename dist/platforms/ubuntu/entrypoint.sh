@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-apt-get update && apt-get install -y --no-install-recommends libsharpyuv0
+apt-get update && apt-get install -y --no-install-recommends curl ca-certificates
+curl -fsSL -o /tmp/libsharpyuv0.deb http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libsharpyuv0_1.3.2-0.4build3_amd64.deb
+dpkg -i /tmp/libsharpyuv0.deb
 
 # Ensure machine ID is randomized for personal license activation
 if [[ "$UNITY_SERIAL" = F* ]]; then
