@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+apt-get update && apt-get install -y --no-install-recommends libsharpyuv0
+
 # Ensure machine ID is randomized for personal license activation
 if [[ "$UNITY_SERIAL" = F* ]]; then
   echo "Randomizing machine ID for personal license activation"
